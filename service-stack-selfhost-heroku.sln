@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-console", "selfhost-console\selfhost-console.csproj", "{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-model", "selfhost-model\selfhost-model.csproj", "{CE1EE02A-D916-4691-8B4A-3EE9588FC306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-serviceinterface", "selfhost-serviceinterface\selfhost-serviceinterface.csproj", "{E081E11C-E22B-4570-85AC-85C380294BA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}.Debug|x86.ActiveCfg = Debug|x86
+		{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}.Debug|x86.Build.0 = Debug|x86
+		{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}.Release|x86.ActiveCfg = Release|x86
+		{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}.Release|x86.Build.0 = Release|x86
+		{CE1EE02A-D916-4691-8B4A-3EE9588FC306}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE1EE02A-D916-4691-8B4A-3EE9588FC306}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE1EE02A-D916-4691-8B4A-3EE9588FC306}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE1EE02A-D916-4691-8B4A-3EE9588FC306}.Release|x86.Build.0 = Release|Any CPU
+		{E081E11C-E22B-4570-85AC-85C380294BA0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E081E11C-E22B-4570-85AC-85C380294BA0}.Debug|x86.Build.0 = Debug|Any CPU
+		{E081E11C-E22B-4570-85AC-85C380294BA0}.Release|x86.ActiveCfg = Release|Any CPU
+		{E081E11C-E22B-4570-85AC-85C380294BA0}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = selfhost-console\selfhost-console.csproj
+	EndGlobalSection
+EndGlobal
