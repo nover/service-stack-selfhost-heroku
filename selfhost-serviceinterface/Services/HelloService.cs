@@ -10,7 +10,7 @@ namespace selfhostserviceinterface
 		{
 			return new
 			{
-				request.Name;
+				Name = request.Name
 			};
 		}
 	}

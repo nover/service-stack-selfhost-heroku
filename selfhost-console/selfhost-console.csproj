@@ -56,6 +56,7 @@
     <Reference Include="ServiceStack.ServiceInterface">
       <HintPath>..\packages\ServiceStack.3.9.70\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Posix" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -64,5 +65,11 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\selfhost-serviceinterface\selfhost-serviceinterface.csproj">
+      <Project>{E081E11C-E22B-4570-85AC-85C380294BA0}</Project>
+      <Name>selfhost-serviceinterface</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
