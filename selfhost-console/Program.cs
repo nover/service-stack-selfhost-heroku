@@ -13,7 +13,7 @@ namespace selfhostconsole
 		{
 			var appHost = new AppHost();
 		    int port = 8080;
-		    if (args.Length > 1)
+		    if (args.Length > 0)
 		    {
 		        port = Convert.ToInt32(args[0]);
 		    }
