@@ -57,9 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppHost.cs" />
+    <Compile Include="Services\HelloService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\selfhost-model\selfhost-model.csproj">
+      <Project>{CE1EE02A-D916-4691-8B4A-3EE9588FC306}</Project>
+      <Name>selfhost-model</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
