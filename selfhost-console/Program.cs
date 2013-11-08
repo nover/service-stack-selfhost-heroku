@@ -11,16 +11,25 @@ namespace selfhostconsole
 	{
 		public static void Main (string[] args)
 		{
-			var appHost = new AppHost();
+			// Set default and see if Heroku is defining something for us...
 		    int port = 8080;
+			var herokuPort = Environment.GetEnvironmentVariable ("PORT");
+			var mode = "web";
+
+			if(!String.IsNullOrEmpty(herokuPort))
+			{
+				port = Convert.ToInt32 (herokuPort);
+			}
 		    if (args.Length > 0)
 		    {
-		        port = Convert.ToInt32(args[0]);
+				mode = args [0];
 		    }
 
+			// bootstrap everything and start hosting...
 		    var url = "http://*:{0}/".Fmt(port);
             Console.WriteLine("Listening on: {0}".Fmt(url));
 
+			var appHost = new AppHost(mode);
 			appHost.Init();
 			appHost.Start(url);
 
