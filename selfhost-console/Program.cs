@@ -3,6 +3,7 @@ using ServiceStack.Configuration;
 using selfhostserviceinterface;
 using Mono.Unix;
 using Mono.Unix.Native;
+using ServiceStack.Text;
 
 namespace selfhostconsole
 {
@@ -10,10 +11,18 @@ namespace selfhostconsole
 	{
 		public static void Main (string[] args)
 		{
-			var settings = new AppSettings();
 			var appHost = new AppHost();
+		    int port = 8080;
+		    if (args.Length > 1)
+		    {
+		        port = Convert.ToInt32(args[0]);
+		    }
+
+		    var url = "http://*:{0}/".Fmt(port);
+            Console.WriteLine("Listening on: {0}".Fmt(url));
+
 			appHost.Init();
-			appHost.Start(settings.Get("listen-url", "http://*:8080/"));
+			appHost.Start(url);
 
 			UnixSignal[] signals = new UnixSignal[] { 
 				new UnixSignal(Signum.SIGINT), 
