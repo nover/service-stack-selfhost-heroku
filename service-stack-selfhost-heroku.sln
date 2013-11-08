@@ -1,11 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-console", "selfhost-console\selfhost-console.csproj", "{A34F7293-8F9E-46A6-B845-F7C5ACFAB404}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-model", "selfhost-model\selfhost-model.csproj", "{CE1EE02A-D916-4691-8B4A-3EE9588FC306}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "selfhost-serviceinterface", "selfhost-serviceinterface\selfhost-serviceinterface.csproj", "{E081E11C-E22B-4570-85AC-85C380294BA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{394F6575-02A6-4945-834A-699328B8996D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +32,9 @@ Global
 		{E081E11C-E22B-4570-85AC-85C380294BA0}.Debug|x86.Build.0 = Debug|Any CPU
 		{E081E11C-E22B-4570-85AC-85C380294BA0}.Release|x86.ActiveCfg = Release|Any CPU
 		{E081E11C-E22B-4570-85AC-85C380294BA0}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = selfhost-console\selfhost-console.csproj
