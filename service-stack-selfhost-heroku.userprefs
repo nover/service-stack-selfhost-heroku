@@ -1,0 +1,36 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="selfhost-serviceinterface/AppHost.cs">
+    <Files>
+      <File FileName="selfhost-serviceinterface/AppHost.cs" Line="16" Column="2" />
+      <File FileName="selfhost-serviceinterface/Services/HelloService.cs" Line="1" Column="1" />
+      <File FileName="selfhost-model/Operations/Hello.cs" Line="1" Column="1" />
+      <File FileName="selfhost-console/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="selfhost-console" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
+          <Node name="selfhost-model" expanded="True">
+            <Node name="Operations" expanded="True" />
+          </Node>
+          <Node name="selfhost-serviceinterface" expanded="True">
+            <Node name="Services" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
