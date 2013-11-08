@@ -7,7 +7,7 @@ namespace selfhostserviceinterface
 	public class AppHost : AppHostHttpListenerLongRunningBase
 	{
 		//Tell Service Stack the name of your application and where to find your web services
-		public AppHost() : base("Mofomo Accounting Services", typeof(HelloService).Assembly) { }
+		public AppHost() : base("Mono Self host Hello World", typeof(HelloService).Assembly) { }
 
 		public override void Configure(Container container)
 		{

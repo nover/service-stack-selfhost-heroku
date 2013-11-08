@@ -13,7 +13,7 @@ namespace selfhostconsole
 			var settings = new AppSettings();
 			var appHost = new AppHost();
 			appHost.Init();
-			appHost.Start(settings.Get("listen-url", "http://*:80/"));
+			appHost.Start(settings.Get("listen-url", "http://*:8080/"));
 
 			UnixSignal[] signals = new UnixSignal[] { 
 				new UnixSignal(Signum.SIGINT), 
